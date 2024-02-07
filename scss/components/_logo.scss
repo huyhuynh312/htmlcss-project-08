@@ -5,11 +5,13 @@
     align-items: center;
     gap: 14px;
 
-    @include abstracts.breakpoint(sm) {
+    @include abstracts.breakpoint(lg) {
+        gap: 10px;
+        margin-left: 20px;
     }
 
-    @include abstracts.breakpoint(sm) {
-        gap: 10px;
+    @include abstracts.breakpoint(md) {
+        margin-left: 0;
     }
 
     &__tittle {
@@ -17,13 +19,13 @@
         font-weight: 700;
         line-height: 1.45;
 
-        @include abstracts.breakpoint(sm) {
+        @include abstracts.breakpoint(md) {
             font-size: 1.8rem;
         }
     }
 
     &__img {
-        @include abstracts.breakpoint(sm) {
+        @include abstracts.breakpoint(md) {
             width: 24px;
         }
     }
