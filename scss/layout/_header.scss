@@ -10,6 +10,7 @@
 }
 
 .top-bar {
+    position: relative;
     @extend %flexItemCenter;
     padding: 30px 0;
 
@@ -47,12 +48,28 @@
     }
 
     &__list {
-        display: flex;
-        gap: 30px;
+        @extend %flexItemCenter;
+    }
+
+    &__item {
+        &:first-child a {
+            padding-left: 0;
+        }
+
+        &:last-child a {
+            padding-right: 0;
+        }
+
+        &:hover .dropdown {
+            opacity: 1;
+            visibility: visible;
+        }
     }
 
     &__link {
-        display: flex;
+        @extend %flexItemCenter;
+        height: 50px;
+        padding: 0 15px;
         gap: 6px;
         font-size: 1.5rem;
         font-weight: 500;
