@@ -11,9 +11,17 @@ html.dark {
     --top-act-group-shadow: #00000033;
     --top-act-group-separate: #ededf6;
 
+    @include abstracts.breakpoint(lg) {
+        --header-shadow-color: rgba(0, 0, 0, 0.2);
+    }
+
     // Dropdown
     --dropdown-bg-color: #424957;
     --dropdown-shadow-color: rgba(23, 28, 40, 0.4);
     --dropdown-filter-color: brightness(0) saturate(100%) invert(26%) sepia(15%)
         saturate(677%) hue-rotate(182deg) brightness(93%) contrast(85%);
+    --top-menu-border-color: #171c28;
+    --menu-column-link-color: #b9babe;
+    --menu-column-icon-color: brightness(0) saturate(100%) invert(86%) sepia(4%)
+        saturate(373%) hue-rotate(202deg) brightness(113%) contrast(95%);
 }
