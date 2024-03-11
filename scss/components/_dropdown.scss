@@ -6,13 +6,10 @@
 
     width: min(1240px, 100%);
     padding-top: 54px;
-    opacity: 0;
-    visibility: hidden;
+    display: none;
     transition: 0.25s;
 
     @include abstracts.breakpoint(lg) {
-        opacity: 1;
-        visibility: visible;
         position: initial;
         padding-top: 0;
     }
@@ -43,6 +40,8 @@
             border-radius: 0;
             background: transparent;
             box-shadow: none;
+
+            overflow-y: auto;
 
             &::before {
                 content: none;
