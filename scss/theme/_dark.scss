@@ -2,8 +2,8 @@
 
 html.dark {
     --text-color: #fff;
-    --icon-color: brightness(0) saturate(100%) invert(100%) sepia(100%)
-        saturate(0%) hue-rotate(182deg) brightness(103%) contrast(101%);
+    --icon-color: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(182deg) brightness(103%)
+        contrast(101%);
 
     --body-bg: #292e39;
     --header-bg-color: #171c28;
@@ -18,10 +18,14 @@ html.dark {
     // Dropdown
     --dropdown-bg-color: #424957;
     --dropdown-shadow-color: rgba(23, 28, 40, 0.4);
-    --dropdown-filter-color: brightness(0) saturate(100%) invert(26%) sepia(15%)
-        saturate(677%) hue-rotate(182deg) brightness(93%) contrast(85%);
+    --dropdown-filter-color: brightness(0) saturate(100%) invert(26%) sepia(15%) saturate(677%) hue-rotate(182deg)
+        brightness(93%) contrast(85%);
     --top-menu-border-color: #171c28;
     --menu-column-link-color: #b9babe;
-    --menu-column-icon-color: brightness(0) saturate(100%) invert(86%) sepia(4%)
-        saturate(373%) hue-rotate(202deg) brightness(113%) contrast(95%);
+    --menu-column-icon-color: brightness(0) saturate(100%) invert(86%) sepia(4%) saturate(373%) hue-rotate(202deg)
+        brightness(113%) contrast(95%);
+
+    // Sidebar
+    --sidebar-bg: #292e39;
+    --sidebar-shadow-color: box-shadow: rgba(23, 28, 40, 0.40);
 }
