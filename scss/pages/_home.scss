@@ -2,6 +2,9 @@
 
 .home {
     &__container {
+        --grid-gutter-x: 30px;
+        --grid-gutter-y: 30px;
+
         margin-top: 40px;
 
         @include abstracts.screen(md) {
@@ -10,7 +13,6 @@
     }
 
     &__heading {
-        margin-bottom: 20px;
         font-size: 2.4rem;
         font-weight: 700;
         line-height: 1.42;
@@ -26,5 +28,12 @@
         @include abstracts.screen(md) {
             --grid-gutter-y: 20px;
         }
+    }
+
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
     }
 }

@@ -11,6 +11,7 @@
 
     @include abstracts.screen(xl) {
         flex-direction: column;
+        padding: 20px;
     }
 
     @include abstracts.screen(md) {
